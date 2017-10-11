@@ -4,7 +4,12 @@
 # http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
 
 dist/*
-target/
+target/resolution-cache/
+target/streams/
+target/scala-2.12/classes
+target/scala-2.12/resource_managed
+target/scala-2.12/src_managed
+
 lib_managed/
 src_managed/
 project/boot/
@@ -26,3 +31,7 @@ gen
 /src/main/resources/settings.properties
 /src/main/resources/twitter4j.properties
 /project/build.properties
+project/project/
+src/main/resources/
+src/main/scala-2.12/
+src/test/
