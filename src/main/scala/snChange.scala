@@ -96,6 +96,7 @@ object AsyncSnChange {
           println(status.getUser().getScreenName())
           mysql.Insert(status, name.asInstanceOf[String])
         }
+          // ガチャ
         else if (text contains "ガチャ") {
           mysql.Connect()
           mysql.Gacha() match {
