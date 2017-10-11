@@ -43,6 +43,7 @@ object AsyncSnChange {
     
     val tf: TwitterFactory = new TwitterFactory()
     val twitter: Twitter = tf.getInstance()
+    //使っていない
     val user: User = twitter.verifyCredentials()
     
     val prop = new Properties
