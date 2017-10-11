@@ -85,14 +85,14 @@ object AsyncSnChange {
           mysql.Connect()
           
           val name = keywordIndex(keywordIndex.indexOf("is") + 1)
-          /*twitter.updateProfile(
+          twitter.updateProfile(
             name,
             twitter.showUser("aokabit").getURL(),
             twitter.showUser("aokabit").getLocation,
   
             twitter.showUser("aokabit").getDescription()
           )
-          twitter.updateStatus("My name is " + twitter.showUser("aokabit").getName)*/
+          twitter.updateStatus("My name is " + twitter.showUser("aokabit").getName)
           println(status.getUser().getScreenName())
           mysql.Insert(status, name.asInstanceOf[String])
         }
