@@ -93,7 +93,7 @@ object AsyncSnChange {
   
             twitter.showUser("aokabit").getDescription()
           )
-          twitter.updateStatus("My name is " + twitter.showUser("aokabit").getName)
+          twitter.updateStatus("My name is " + twitter.showUser("aokabit").getName + "\nReplied from "+ status.getUser().getScreenName())
           println(status.getUser().getScreenName())
           mysql.Insert(status, name.asInstanceOf[String])
         }
